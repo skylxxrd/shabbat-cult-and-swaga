@@ -1,4 +1,32 @@
 :root {
-  --color-white: #e3e3e3;
-  --color-black: #1d1d1d;
+  --primary: #6c63ff;
+  --secondary: #2d2d4a;
+  --accent: #ff6b6b;
+  --text-color: #333;
+  --bg-color: #fff;
+  --card-bg: #fff;
+  --header-bg: #1e1e2f;
+  --hero-bg-1: #1e1e2f;
+  --hero-bg-2: #2d2d4a;
+  --footer-bg: #f8f9fa;
+  --border-color: #ddd;
+  --hover-bg: #f0f0f0;
+  --text-hover: #333;
+  --text-secondary: #666;
+  --heading-color: #222;
+}
+
+[data-theme="'dark'"] {
+  --text-color: #fff;
+  --bg-color: #121212;
+  --card-bg: #1e1e2f;
+  --header-bg: #0d0d1a;
+  --hero-bg-1: #0d0d1a;
+  --hero-bg-2: #1e1e2f;
+  --footer-bg: #1a1a2e;
+  --border-color: #333;
+  --hover-bg: #2d2d4a;
+  --text-hover: #fff;
+  --text-secondary: #aaa;
+  --heading-color: #eee;
 }

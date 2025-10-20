@@ -2,18 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-
-    <style media="(prefers-color-scheme: light)">
-      @import url('./src/styles/colors/light.css');
-    </style>
-    <style media="(prefers-color-scheme: dark)">
-      @import url('./src/styles/colors/dark.css');
-    </style>
+    <title>Our Services | CreateX</title>
+    <!-- Подключаем основной CSS -->
+    <link rel="stylesheet" href="/src/index.css" />
+    <!-- Можно подключить шрифты, если нужно -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">CREATEX</div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn-primary">Talk to a hacker</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Our services</h1>
+        <p>
+          We offer more than services. Our agency provides solutions to your top priority concerns, enabling customers
+          targeting, sales performance and sales growth. If the best-selling solution ready is available, we create one,
+          specifically to suit your business.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-secondary">Start now</button>
+          <span class="phone">Call us: 248-555-0126</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <div class="service-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <h2>Social Media Marketing</h2>
+            <p>
+              Donec et eros in massa vel fringilla ac. Congue in felis turpis, nec accumsan gravida. Morbi mattis ligula
+              massa eu tincidunt. Pellentesque lacinia neque non magna aliquam ut. Nunc vitae urna, purus libero risus
+              pellentesque molestie. Arcu at lorem metus sed arcu consectetur id eget rhoncus pretium.
+            </p>
+            <div class="card-buttons">
+              <button class="btn btn-outline">Learn more</button>
+              <button class="btn btn-primary">Try this module</button>
+            </div>
+            <img src="images/social-media.png" alt="Social Media Dashboard" class="service-image" />
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card">
+            <h2>Search Engine Optimization</h2>
+            <p>
+              Eleifend quis quam tortor, morbi nulla varius nisl pulvinar. Aliquam venenatis, lacus ut mauris interdum,
+              semper ultrices augue. A pulvinar dolor in posuere nunc adipiscing. Pharetra, tristique viverra eleifend
+              leo purus tempus sagittis massa. Quis cum cursus elementum in feugiat.
+            </p>
+            <div class="card-buttons">
+              <button class="btn btn-outline">Learn more</button>
+              <button class="btn btn-primary">Try this module</button>
+            </div>
+            <img src="images/seo.png" alt="SEO Analytics" class="service-image" />
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card">
+            <h2>Research Service</h2>
+            <p>
+              Ultricies in hac malesuada est. Rhoncus et ultricies diam viverra in. Est nato lectus purus tincidunt
+              massa luctus. Hac elit vulputate eleifend elementum. Morbi massa orci velit sit egestas.
+            </p>
+            <div class="card-buttons">
+              <button class="btn btn-outline">Learn more</button>
+              <button class="btn btn-primary">Try this module</button>
+            </div>
+            <img src="images/research.png" alt="Research Data" class="service-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 CreateX. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Подключаем JS -->
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
