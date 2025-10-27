@@ -1,28 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('themeToggle');
   if (!themeToggle) return;
-
-  // Функция для установки темы
   const setTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
   };
+  const prefersDark = typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialAttr = document.documentElement.getAttribute('data-theme');
+  const initialTheme = initialAttr === 'dark' || initialAttr === 'light' ? initialAttr : (prefersDark ? 'dark' : 'light');
+  setTheme(initialTheme);
 
-  // Переключение темы
+  let userOverrodeTheme = false;
   themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
-
-    // Безопасная работа с localStorage
-    if (typeof sessionStorage !== 'undefined') {
-      sessionStorage.setItem('theme', newTheme);
-    }
+    userOverrodeTheme = true;
   });
 
-  // Восстановление темы
-  let savedTheme = 'light';
-  if (typeof sessionStorage !== 'undefined') {
-    savedTheme = sessionStorage.getItem('theme') || 'light';
+  if (typeof window !== 'undefined' && typeof window.matchMedia === 'function') {
+    const mql = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSchemeChange = (e) => {
+      if (!userOverrodeTheme) {
+        setTheme(e.matches ? 'dark' : 'light');
+      }
+    };
+    if (typeof mql.addEventListener === 'function') {
+      mql.addEventListener('change', handleSchemeChange);
+    } else if (typeof mql.addListener === 'function') {
+      mql.addListener(handleSchemeChange);
+    }
   }
-  setTheme(savedTheme);
 });
