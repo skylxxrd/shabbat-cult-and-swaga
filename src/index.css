@@ -745,6 +745,8 @@ p.hero__text {
 
 .seo-wrapper {
   background: no-repeat url('../images/SEO_background.svg');
+  overflow: hidden;
+  background-size: cover;
 }
 
 .seo__illustration {
@@ -890,7 +892,11 @@ p.hero__text {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .seo__content {
@@ -899,6 +905,10 @@ p.hero__text {
 
   .seo__title {
     font-size: 28px;
+  }
+
+  .form__group {
+    flex: 1 1 100%;
   }
 
   .seo__background {
@@ -927,6 +937,13 @@ p.hero__text {
 
   .seo {
     gap: 20px;
+    padding: 16px;
+  }
+
+  .seo__illustration img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
   }
 }
 
