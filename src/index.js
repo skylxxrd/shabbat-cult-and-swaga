@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     setTheme(newTheme);
 
     // Безопасная работа с localStorage
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem('theme', newTheme);
+    if (typeof sessionStorage !== 'undefined') {
+      sessionStorage.setItem('theme', newTheme);
     }
   });
 
   // Восстановление темы
   let savedTheme = 'light';
-  if (typeof localStorage !== 'undefined') {
-    savedTheme = localStorage.getItem('theme') || 'light';
+  if (typeof sessionStorage !== 'undefined') {
+    savedTheme = sessionStorage.getItem('theme') || 'light';
   }
   setTheme(savedTheme);
 });
