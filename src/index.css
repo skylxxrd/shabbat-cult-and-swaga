@@ -1043,11 +1043,13 @@ p.hero__text {
   flex-direction: column;
   align-items: center;
 }
-@media(max-width: 600px){
-  .cases{
+
+@media (width <= 600px) {
+  .cases {
     padding: 80px 10px;
   }
 }
+
 .case-card:hover {
   box-shadow: 0 4px 4px -4px rgb(30 33 44 / 5%);
 }
