@@ -4,9 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const setTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
   };
-  const prefersDark = typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const prefersDark =
+    typeof window !== 'undefined' &&
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches;
   const initialAttr = document.documentElement.getAttribute('data-theme');
-  const initialTheme = initialAttr === 'dark' || initialAttr === 'light' ? initialAttr : (prefersDark ? 'dark' : 'light');
+  const initialTheme = initialAttr === 'dark' || initialAttr === 'light' ? initialAttr : prefersDark ? 'dark' : 'light';
   setTheme(initialTheme);
 
   let userOverrodeTheme = false;
