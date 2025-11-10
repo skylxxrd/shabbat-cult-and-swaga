@@ -18,16 +18,16 @@
       const setTheme = (theme) => {
         document.documentElement.setAttribute('data-theme', theme);
         try {
-          localStorage.setItem(STORAGE_KEY, theme);
-        } catch (e) {
+          window.localStorage.setItem(STORAGE_KEY, theme);
+        } catch {
           // localStorage недоступен, игнорируем
         }
       };
 
       const getStoredTheme = () => {
         try {
-          return localStorage.getItem(STORAGE_KEY);
-        } catch (e) {
+          return window.localStorage.getItem(STORAGE_KEY);
+        } catch {
           return null;
         }
       };
