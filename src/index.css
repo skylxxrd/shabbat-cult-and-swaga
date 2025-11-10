@@ -367,6 +367,7 @@ p.hero__text {
 
 .services {
   margin: 40px auto 0;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
 }
