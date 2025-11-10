@@ -116,8 +116,6 @@ section {
   --color-link: #aaa1a9;
   --color-btn-hover: #8a85ff;
   --color-body-bg: #fff;
-
-  /* Дополнительные переменные для светлой темы */
   --color-services-title: #1e212c;
   --color-services-description: #787a80;
   --color-cases-wrapper-bg: #f4f5f6;
@@ -136,7 +134,7 @@ section {
 
 [data-theme='dark'] {
   --color-bg: #1e212c;
-  --color-text: #a50000;
+  --color-text: #b2aeb1;
   --color-text-secondary: #b2aeb1;
   --color-primary: #9a94ff;
   --color-footer-bg: #12141d;
@@ -146,8 +144,6 @@ section {
   --color-link: #b2aeb1;
   --color-btn-hover: #a8a2ff;
   --color-body-bg: #1e212c;
-
-  /* Дополнительные переменные для тёмной темы */
   --color-services-title: #b2aeb1;
   --color-services-description: #aaa1a9;
   --color-cases-wrapper-bg: #1e212c;
@@ -186,7 +182,6 @@ table {
   border-spacing: 0;
 }
 
-/* Base */
 body {
   font-family: Lato, Roboto, sans-serif;
   font-weight: 400;
@@ -197,7 +192,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Wrapper */
 .wrapper {
   background: no-repeat url('../images/background.svg');
   width: 100%;
@@ -209,7 +203,6 @@ body {
   flex-direction: column;
 }
 
-/* Container */
 .container {
   width: 1230px;
   margin: 0 auto;
@@ -217,7 +210,6 @@ body {
   justify-content: center;
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -280,7 +272,6 @@ body {
   background: var(--color-btn-hover);
 }
 
-/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -374,7 +365,6 @@ p.hero__text {
   font-weight: 700;
 }
 
-/* Services */
 .services {
   margin: 40px auto 0;
   display: flex;
@@ -458,7 +448,6 @@ p.hero__text {
   color: #fff;
 }
 
-/* Footer */
 .footer {
   width: 100%;
   background-color: rgb(30 33 44 / 100%);
@@ -541,7 +530,6 @@ p.hero__text {
   margin: 16px 0 24px;
 }
 
-/* Newsletter */
 .newsletter {
   max-width: 100%;
 }
@@ -631,14 +619,12 @@ p.hero__text {
     contrast(85%);
 }
 
-/* Footer divider */
 .footer__divider {
   margin: 60px 0;
   width: 100%;
   display: block;
 }
 
-/* Footer partners row */
 .footer__awards {
   width: 100%;
   background-color: rgb(30 33 44 / 100%);
@@ -659,7 +645,6 @@ p.hero__text {
   height: auto;
 }
 
-/* Footer bottom */
 .footer__bottom {
   background-color: #282a36;
   padding: 24px 0;
@@ -732,9 +717,6 @@ p.hero__text {
   background-color: #6a65e3;
 }
 
-/* Новый прикол */
-
-/* SEO */
 .seo {
   display: flex;
   align-items: center;
@@ -776,7 +758,6 @@ p.hero__text {
   color: #fff;
 }
 
-/* Form */
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -824,7 +805,6 @@ p.hero__text {
   color: #7c7f88;
 }
 
-/* Checkbox */
 .form__checkbox {
   display: flex;
   align-items: center;
@@ -872,7 +852,6 @@ p.hero__text {
   background-color: #6a67e0;
 }
 
-/* SEO decorative bg */
 .seo__background {
   position: absolute;
   top: 50%;
@@ -886,7 +865,6 @@ p.hero__text {
   opacity: 0.8;
 }
 
-/* Responsive */
 @media (width <= 900px) {
   .seo {
     flex-direction: column;
@@ -947,7 +925,6 @@ p.hero__text {
   }
 }
 
-/* Markets */
 .markets {
   padding: 100px 20px;
   text-align: center;
@@ -974,7 +951,6 @@ p.hero__text {
   flex-wrap: wrap;
 }
 
-/* Markets item */
 .markets__item {
   flex: 1 1 220px;
   max-width: 260px;
@@ -1002,7 +978,6 @@ p.hero__text {
   transition: color 0.3s ease;
 }
 
-/* Markets divider */
 .markets__divider {
   align-self: center;
   width: 1px;
@@ -1071,7 +1046,6 @@ p.hero__text {
   box-shadow: 0 4px 4px -4px rgb(30 33 44 / 5%);
 }
 
-/* Cases header */
 .cases__header {
   width: 100%;
   display: flex;
@@ -1105,7 +1079,6 @@ p.hero__text {
   transition: all 0.3s ease;
 }
 
-/* Левая стрелка — без фона, иконка #424551 */
 .cases__arrow--left {
   background: transparent;
 }
@@ -1115,7 +1088,6 @@ p.hero__text {
     contrast(85%);
 }
 
-/* Правая стрелка — круглый фон #7772f1, иконка белая */
 .cases__arrow--right {
   background: #7772f1;
   box-shadow: 0 4px 10px rgb(119 114 241 / 40%);
@@ -1125,7 +1097,6 @@ p.hero__text {
   filter: brightness(0) invert(1);
 }
 
-/* Hover эффекты */
 .cases__arrow--left:hover {
   opacity: 0.7;
 }
@@ -1134,7 +1105,6 @@ p.hero__text {
   background: #6a65e3;
 }
 
-/* Cases cards grid */
 .cases__cards {
   display: grid;
   grid-template-columns: repeat(3, 390px);
@@ -1161,12 +1131,6 @@ p.hero__text {
   width: 100%;
 }
 
-/* .case-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
-} */
-
-/* Cases footer */
 .cases__footer {
   display: flex;
   align-items: center;
@@ -1174,10 +1138,11 @@ p.hero__text {
   gap: 24px;
   width: 100%;
   margin-top: 40px;
-  grid-column: 1 / -1; /* Занимает все колонки */
+  grid-column: 1 / -1;
 }
 
 .cases__footer-text {
+  color: var(--color-services-title);
   font-size: 28px;
   font-weight: 700;
   margin: 0;
@@ -1209,15 +1174,12 @@ p.hero__text {
   transition: background-color 0.3s ease;
 }
 
-/* Логотип и полоска */
 .case-card__logo {
   padding-top: 15px;
   width: 80px;
   height: 44px;
   margin-right: auto;
 }
-
-/* Полоска после логотипа */
 
 .case-card__title {
   font-size: 14px;
@@ -1338,7 +1300,6 @@ p.hero__text {
   color: white;
 }
 
-/* Круг во второй карточке - полый с прозрачным центром */
 .case-card:nth-child(2) .case-card__stat-item:nth-child(1) .case-card__stat-circle {
   --percentage: 100%;
   --circle-color: rgb(90 135 252 / 100%);
@@ -1348,12 +1309,9 @@ p.hero__text {
   mask-image: radial-gradient(circle, transparent 0%, transparent 50%, black 51%, black 100%);
 }
 
-/* Прозрачный центр круга во второй карточке - скрываем ::after */
 .case-card:nth-child(2) .case-card__stat-item:nth-child(1) .case-card__stat-circle::after {
   display: none;
 }
-
-/* Обновление цветов активной карточки при смене темы */
 .case-card--active {
   background: no-repeat url('../images/casebackgroung.svg');
   background-size: cover;
