@@ -1,0 +1,55 @@
+.seo {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 556px;
+  gap: 40px;
+}
+
+.seo-wrapper {
+  background: no-repeat url('../../../images/SEO_background.svg');
+  overflow: hidden;
+  background-size: cover;
+}
+
+.seo__illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seo__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.seo__content {
+  flex: 1;
+  max-width: 460px;
+  z-index: 2;
+}
+
+.seo__title {
+  margin-bottom: 30px;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+
+.seo__background {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: auto;
+  max-width: 35vw;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+

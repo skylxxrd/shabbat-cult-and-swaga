@@ -1,13 +1,11 @@
 .container {
-  width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
+  width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
-@media (--sm-viewport) {
+/* @media (--sm-viewport) {
   .container {
     max-width: 576px;
   }
@@ -31,4 +29,4 @@
   .container {
     max-width: 1312px;
   }
-}
+} */

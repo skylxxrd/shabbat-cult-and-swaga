@@ -1,6 +1,199 @@
-body {
+/* body {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+/* Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit; /* вместо font-style: lato */
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Theme variables */
+:root {
+  --color-bg: #fff;
+  --color-text: #fff;
+  --color-text-secondary: #aaa1a9;
+  --color-primary: #7772f1;
+  --color-footer-bg: #1e212c;
+  --color-footer-bottom-bg: #2d2b36;
+  --color-input-bg: #3d3b45;
+  --color-border: #77737a;
+  --color-link: #aaa1a9;
+  --color-btn-hover: #8a85ff;
+  --color-body-bg: #fff;
+  --color-services-title: #1e212c;
+  --color-services-description: #787a80;
+  --color-cases-wrapper-bg: #f4f5f6;
+  --color-card-bg: #f8f9fa;
+  --color-card-title: rgb(30 33 44 / 100%);
+  --color-card-description: rgb(120 122 128 / 100%);
+  --color-markets-title: #1a1a1a;
+  --color-markets-subtitle: #1a1a1a;
+  --color-markets-text: #555;
+  --color-news-card-bg: #fff;
+  --color-news-title: #1a1a1a;
+  --color-news-text: #555;
+  --color-news-meta: #888;
+  --color-white: #fff;
+}
+
+[data-theme='dark'] {
+  --color-bg: #1e212c;
+  --color-text: #fff;
+  --color-text-secondary: #b2aeb1;
+  --color-primary: #9a94ff;
+  --color-footer-bg: #12141d;
+  --color-footer-bottom-bg: #1a1c27;
+  --color-input-bg: #2a2833;
+  --color-border: #555;
+  --color-link: #b2aeb1;
+  --color-btn-hover: #a8a2ff;
+  --color-body-bg: #1e212c;
+  --color-services-title: #b2aeb1;
+  --color-services-description: #aaa1a9;
+  --color-cases-wrapper-bg: #1e212c;
+  --color-card-bg: #2d2b36;
+  --color-card-title: #b2aeb1;
+  --color-card-description: #aaa1a9;
+  --color-markets-title: #b2aeb1;
+  --color-markets-subtitle: #b2aeb1;
+  --color-markets-text: #aaa1a9;
+  --color-news-card-bg: #2d2b36;
+  --color-news-title: #b2aeb1;
+  --color-news-text: #aaa1a9;
+  --color-news-meta: #888;
+  --color-white: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Lato, Roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  line-height: 1;
+  background-color: var(--color-body-bg);
+  transition: background-color 0.3s ease;
 }

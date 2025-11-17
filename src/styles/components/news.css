@@ -1,0 +1,122 @@
+.news {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.news__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
+
+.news__content {
+  flex: 1;
+  max-width: 300px;
+}
+
+.news__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-markets-title);
+  transition: color 0.3s ease;
+}
+
+.news__text {
+  font-size: 1rem;
+  color: var(--color-markets-text);
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+}
+
+.news__button {
+  display: inline-block;
+  background: #7772f1;
+  color: #fff;
+  padding: 15px 42px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.news__button:hover {
+  background: #6a65e3;
+}
+
+.news__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  flex: 2;
+}
+
+.news-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease;
+  background: var(--color-news-card-bg);
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+}
+
+.news-card__img {
+  width: 100%;
+  display: block;
+}
+
+.news-card__info {
+  padding: 20px;
+}
+
+.news-card__meta {
+  font-size: 0.85rem;
+  color: var(--color-news-meta);
+  margin-bottom: 10px;
+}
+
+.news-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--color-news-title);
+}
+
+.news-card__desc {
+  font-size: 0.95rem;
+  color: var(--color-news-text);
+  margin-bottom: 16px;
+}
+
+.news-card__link {
+  color: var(--color-news-title);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.news-card__arrow {
+  font-size: 1.1rem;
+  color: var(--color-news-title);
+  transition: transform 0.3s ease;
+}
+
+.news-card__link:hover .news-card__arrow {
+  transform: translateX(4px);
+}
+
+
