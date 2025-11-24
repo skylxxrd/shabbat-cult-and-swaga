@@ -1,15 +1,22 @@
 .seo {
   display: flex;
   align-items: center;
-  width: 85%;
-  height: 556px;
   gap: 40px;
+  justify-content: center;
 }
 
-.seo-wrapper {
+.seo__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 556px;
   background: no-repeat url('../../../images/SEO_background.svg');
-  overflow: hidden;
+  background-position: right center;
   background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
 
 .seo__illustration {
@@ -26,8 +33,22 @@
 
 .seo__content {
   flex: 1;
-  max-width: 460px;
   z-index: 2;
+}
+
+@media (width > 900px) {
+  .seo {
+    width: 85%;
+    max-width: 1230px;
+  }
+
+  .seo__content {
+    max-width: 460px;
+  }
+
+  .seo__form.form {
+    max-width: 460px;
+  }
 }
 
 .seo__title {

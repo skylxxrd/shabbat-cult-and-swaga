@@ -22,7 +22,7 @@
   margin: 0;
 }
 
-p.hero__text {
+.hero__text {
   font-size: 20px;
   font-weight: 400;
   color: #a6a7ad;
